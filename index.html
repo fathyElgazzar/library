@@ -7,5 +7,36 @@
     <script defer src="script.js"></script>
     <title>Library</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Online Library</h1>
+    <div class="container">
+      <div class="book-container">
+      </div>
+      <button class="btn btn-add" id="btn-add">Add new book</button>
+      <div class="form-container">
+        <form class="form" id="form">
+          <ul>
+            <li>
+              <label for="book-name" class="book-name">Name:</label>
+              <input type="text" id="book-name" placeholder="Book name" required />
+            </li>
+            <li>
+              <label for="book-author" class="book-author">Author:</label>
+              <input type="text" id="book-author" placeholder="Author" required />
+            </li>
+            <li>
+              <label for="book-pages" class="book-pages">Number of pages:</label>
+              <input type="number" id="book-pages" placeholder="Pages" max="200000" required />
+            </li>
+            <li>
+              <label for="read">Read it?</label>
+              <input type="checkbox" name="read" id="read" />
+            </li>
+            <button type="submit" class="btn" id="btn-submit">Add New book</button>
+          </ul>
+          <span class="close-form">X</span>
+        </form>
+
+    </div>
+  </body>
 </html>
