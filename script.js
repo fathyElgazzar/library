@@ -14,20 +14,37 @@ const closeForm = document.querySelector('.close-form');
 const myLibrary = [];
 
 // Book constructor
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.info = function () {
-    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`;
-  };
-}
+// function Book(title, author, pages, read) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.read = read;
+//   this.info = function () {
+//     return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`;
+//   };
+// }
 
-//  To toggle the read status
-Book.prototype.toggleReadStatus = function () {
-  this.read = !this.read; // Toggle the read status
-};
+// //  To toggle the read status
+// Book.prototype.toggleReadStatus = function () {
+//   this.read = !this.read; // Toggle the read status
+// };
+
+// Book class
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
+  get info() {
+    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`;
+  }
+
+  toggleReadStatus() {
+    this.read = !this.read; // Toggle the read status
+  }
+}
 
 // Add book function
 function addBookToLibrary() {
