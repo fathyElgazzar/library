@@ -4,7 +4,7 @@
 
 Online library for reading books
 
-[![Demo](images/demo-library.jpg)](https://fathyElgazzar.github.io/library/)
+[![Demo](images/demo-library.jpg)](https://gazzaar.github.io/library/)
 
 ### What I have learned from this project?
 
